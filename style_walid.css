@@ -17,15 +17,22 @@ body{
      padding-top: 40px;
 
 }
+.pos_voiteur{
+    width: 1300px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items:center;
+}
 .content_voiteur {
     height: 500px; 
-    background-color: rgba(0, 0, 0, 0.753);
     width:900px;
     height: 600px;
     padding-right: 100px;
     background-image: url('images/m1.jpg');
     background-size: cover;
-    animation: bgChange 19s linear infinite;
+    animation: bgChange 10s linear infinite;
 }
 
 @keyframes bgChange { 
@@ -81,20 +88,28 @@ body{
     font-size: 30px;
     padding: 20px;
     text-align: center;
+   
+}
+.titre_1{
+     color: aliceblue;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
 }
 .table{
-    width: 600px;
+    width: 700px;
 }
 .motore{
     width: 50%;
     height: 100%;
 }
 .card_dec{
-    padding: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-right: 150px;
+}
+.card{
+    margin: 40px;
 }
 .arch_voiture{
     background-color: rgb(0, 0, 0);
@@ -107,18 +122,101 @@ body{
 .img_arch{
     width: 700px;
 }
-
+.info_cle{
+    width: 1500px;
+    height: auto;
+    background-color: rgb(247, 234, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
 
 @media screen and (max-width: 768px) {
-
-    .content_voiteur {
-        height: 500px; 
-        background-color: rgba(0, 0, 0, 0.753);
-        width:400px;
-        height: 170px;
-        padding-right: 50px;
-        background-image: url('images/m1.jpg');
-        background-size: cover;
-        animation: bgChange 19s linear infinite;
+    .content_gen{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+   }
+   .pos_voiteur{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items:center;
+    padding-right: 940px;
+    background-color: black;
+    
+}
+.content_voiteur {
+    height: 200px; 
+    width:300px;
+    padding-right: 10px;
+    background-image: url('images/m1.jpg');
+    background-size: cover;
+    animation: bgChange 10s linear infinite;
+}
+    .titre{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        padding: 5px;
+        text-align: center;
     }
+    .plus_voiteur{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        width: 1510px;
+        height: auto;
+        background-color: rgb(247, 241, 241);
+        padding-right: 940px;
+    }
+    .table{
+        width: 500px;
+        height: 150px;
+    }
+    .motore{
+        width: 100%;
+        height: 100%;
+    }
+    .titre_1{
+       color: aliceblue;
+       font-size: 17px;
+       padding-right: 900px;
+
+   }
+   .card_dec{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin-right: 900px;
+}
+.arch_voiture{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    margin-right: 900px;
+}
+.img_arch{
+    width: 400px;
+}
+.info_cle{
+    width: 500px;
+    height: auto;
+    background-color: rgb(247, 234, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin-right: 920px;
+}
+.footer{
+    margin-right: 200px;
+}
 }
